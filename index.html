@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic-Tac-Toe</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js" defer></script>
+
+
+
+</head>
+<body>
+
+    <div id="title">
+        <h1>Tic-Tac-Toe</h1>
+    </div>
+
+    <div id="game">
+
+      <div id="players">
+        <div id="player1" class="player">
+            <h1 id="playerOneHeader">Player 1</h1>
+                <label for="playerOneName">
+                    Insert here:
+                </label>
+                <input id="playerOneName" type="text">
+    
+            
+        </div>
+
+        <div id="player2" class="player2">
+          <h1 id="playerTwoHeader">Player 2</h1>
+              <label for="playerTwoName">
+                  Insert here:
+              </label>
+              <input id="playerTwoName" type="text">
+  
+      </div>
+    </div>
+    
+    
+        <div id="grid" >
+            
+
+            <div id = "0" class="element" onclick="nextTurn(this)"></div>
+            <div id = '1' class="element" onclick="nextTurn(this)"></div>
+            <div id = '2' class="element" onclick="nextTurn(this)"></div>
+    
+            <div id = "3" class="element" onclick="nextTurn(this)"></div>
+            <div id = "4" class="element" onclick="nextTurn(this)"></div>
+            <div id = "5" class="element" onclick="nextTurn(this)"></div>
+    
+            <div id = "6" class="element" onclick="nextTurn(this)"></div>
+            <div id = "7" class="element" onclick="nextTurn(this)"></div>
+            <div id = "8" class="element" onclick="nextTurn(this)"></div>
+    
+    
+    
+    
+        </div>
+    
+    
+     
+
+
+
+    </div>
+
+    <div id="beginGame">
+        <button id="startGameButton" onclick="beginGame()">Begin!</button>
+        <button id= "resetGameButton"onclick="resetGame()">Reset</button>
+    </div>
+
+
+</body>
+</html>
